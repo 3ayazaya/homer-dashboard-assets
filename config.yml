@@ -1,0 +1,153 @@
+---
+# Homepage configuration
+# See https://fontawesome.com/icons for icons options
+
+title: "My homelab"
+subtitle: "SHMEL"
+#logo: "logo.png"
+icon: "fab fa-forumbee" # Optional icon
+
+header: true
+
+# Optional theme customization
+theme: default
+colors:
+  light:
+    highlight-primary: "#3367d6"
+    highlight-secondary: "#4285f4"
+    highlight-hover: "#5a95f5"
+    background: "#f5f5f5"
+    card-background: "#ffffff"
+    text: "#363636"
+    text-header: "#ffffff"
+    text-title: "#303030"
+    text-subtitle: "#424242"
+    card-shadow: rgba(0, 0, 0, 0.1)
+    link: "#3273dc"
+    link-hover: "#363636"
+  dark:
+    highlight-primary: "#3367d6"
+    highlight-secondary: "#4285f4"
+    highlight-hover: "#5a95f5"
+    background: "#131313"
+    card-background: "#2b2b2b"
+    text: "#eaeaea"
+    text-header: "#ffffff"
+    text-title: "#fafafa"
+    text-subtitle: "#f5f5f5"
+    card-shadow: rgba(0, 0, 0, 0.4)
+    link: "#3273dc"
+    link-hover: "#ffdd57"
+
+# Optional navbar
+# links: [] # Allows for navbar (dark mode, layout, and search) without any links
+links:
+  - name: "My GitHub"
+    icon: "fab fa-github"
+    url: "https://github.com/3ayazaya"
+    target: "_blank" # optional html a tag target attribute 
+  - name: "My GitLab"
+    icon: "fab fa-gitlab"
+    url: "https://gitlab.com/3ayazaya"
+    target: "_blank" # optional html a tag target attribute 
+  - name: "CTFtime"
+    icon: "fas fa-flag"
+    url: "https://ctftime.org/"
+    target: "_blank" # optional html a tag target attribute 
+
+# Services
+# First level array represent a group.
+# Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
+services:
+  - name: "Servers"
+    icon: "fas fa-server"
+    items:
+      - name: "Proxmox"
+        logo: "assets/icons/proxmox.png"
+        subtitle: "Virtualization"
+        tag: "VMs"
+        url: "https://pm02.home.lab"
+        target: "_blank" # optional html a tag target attribute
+  - name: "Containers"
+    icon: "fab fa-docker"
+    items:
+      - name: "Portainer"
+        logo: "assets/icons/portainer.png"
+        subtitle: "Docker containers manager"
+        tag: "docker"
+        url: "https://portainer.home.lab/"
+        target: "_blank" # optional html a tag target attribute
+  - name: "Management"
+    icon: "fas fa-user-shield"
+    items:
+      - name: "Nginx Proxy Manager"
+        logo: "assets/icons/nginxproxymanager.png"
+        subtitle: "Reverse proxy manager"
+        tag: "proxy"
+        url: "http://192.168.88.200:81"
+        target: "_blank" # optional html a tag target attribute
+  - name: "Networking"
+    icon: "fas fa-network-wired"
+    items:
+      - name: "Mikrotik Router"
+        logo: "assets/icons/mikrotik.png"
+        subtitle: "Router WEB configure"
+        tag: "router"
+        url: "http://192.168.88.1"
+        target: "_blank" # optional html a tag target attribute
+      - name: "Mikrotik Switch"
+        logo: "assets/icons/mikrotik.png"
+        subtitle: "Switch WEB configure"
+        tag: "switch"
+        url: "http://192.168.88.254"
+        target: "_blank" # optional html a tag target attribute
+  - name: "Monitoring"
+    icon: "fas fa-heartbeat"
+    items:
+      - name: "Prometheus"
+        logo: "assets/icons/prometheus.png"
+        subtitle: "Monitoring · Metrics"
+        tag: "prom"
+        url: "#"
+        target: "_blank" # optional html a tag target attribute
+      - name: "Grafana"
+        logo: "assets/icons/grafana.png"
+        subtitle: "Vizualization"
+        tag: "grafana"
+        url: "http://grafana.home.lab"
+        target: "_blank" # optional html a tag target attribute
+  - name: "Storage"
+    icon: "fas fa-heartbeat"
+    items:
+      - name: "TrueNAS"
+        logo: "assets/icons/truenas.png"
+        subtitle: "Network Attached Storage · Files"
+        tag: "NAS"
+        url: "https://nas.home.lab"
+        target: "_blank" # optional html a tag target attribute
+      - name: "Transmission"
+        logo: "assets/icons/transmission.png"
+        subtitle: "Download manager · Torrents"
+        tag: "torrent"
+        url: "#"
+        target: "_blank" # optional html a tag target attribute
+  - name: "Tools"
+    icon: "fas fa-tools"
+    items:
+      - name: "Cyberchef"
+        logo: "assets/icons/cyberchef.png"
+        subtitle: "Encoding knife"
+        tag: "cyberchef"
+        url: "https://cyberchef.home.lab"
+        target: "_blank" # optional html a tag target attribute
+  - name: "DevOps"
+    icon: "fas fa-code-branch"
+    items:
+      - name: "Gitea"
+        logo: "assets/icons/gitea.png"
+        subtitle: "Self-Hosted Git Service"
+        tag: "git"
+        url: "https://gitea.home.lab"
+        target: "_blank" # optional html a tag target attribute
+  
+
